@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if error %}
+        <div class="alert alert-danger" role="alert">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {{ form_start(form) }}
+
+    {{ form_row(form.email) }}
+
+    {{ form_row(form.password) }}
+
+    <button type="submit" class="btn btn-primary">Connexion</button>
+     <a href="{{ path('inscription') }}" class="btn btn-primary" >Inscription</a>
+    {{ form_end(form) }}
+      <a href="{{ path('app_forgot_password_request') }}" class="link" >mot de passe oublié ?</a>
+   
+
+{% endblock %}
