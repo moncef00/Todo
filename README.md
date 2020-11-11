@@ -1,4 +1,4 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/de26aa436f9945ce82fdbd00c1ddc1f3)](https://www.codacy.com/manual/DamienRiviere/TodoList?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DamienRiviere/TodoList&amp;utm_campaign=Badge_Grade)
+
 
 # Améliorez une application existante de ToDo & Co
 
@@ -19,7 +19,7 @@ Installation de GIT :
     
 Une fois GIT installé, il faudra vous placer dans le répertoire de votre choix puis exécuté la commande suivante :
 
-    - git clone https://github.com/DamienRiviere/TodoList.git
+    - git clone https://github.com/moncef00/Todo.git
     
 Le projet sera automatiquement copié dans le répertoire ciblé. Une fois le dossier copié dans votre répertoire il faut installer les dépendances avec la commande suivante :
 
