@@ -2,7 +2,8 @@
 
 namespace App\Entity;
 
-trait Timestamp{
+trait Timestamp
+{
 
     /**
      * @ORM\Column(type="datetime")

@@ -7,7 +7,6 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\CallbackTransformer;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
-
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
@@ -70,7 +69,7 @@ class InscriptionType extends AbstractType
                         'label' => 'Tapez le mot de passe à nouveau'
                     ],
                 ]
-                )
+            )
             
                 
               
@@ -107,7 +106,7 @@ class InscriptionType extends AbstractType
                 function ($rolesString) {
                     return [$rolesString];
                 }
-            )); 
+            ));
     }
 
 

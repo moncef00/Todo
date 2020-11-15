@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controller;
+
 use App\Entity\User;
 use App\Entity\Task;
 use App\Form\TaskType;
@@ -82,7 +83,7 @@ class TaskController extends AbstractController
      * @throws RuntimeError
      * @throws SyntaxError
      */
-    public function list(TaskRepository $taskRepository  ): Response
+    public function list(TaskRepository $taskRepository): Response
     {
 
 
@@ -90,7 +91,6 @@ class TaskController extends AbstractController
         if ($user == 1) {
             return new Response($this->twig->render('task/list.html.twig', ['tasks' => $taskRepository->findAll()]));
         } else {
-
             return new Response($this->twig->render('task/list.html.twig', ['tasks' => $taskRepository->findBy(['user' => $user])]));
         }
     }

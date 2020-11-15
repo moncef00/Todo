@@ -5,26 +5,20 @@ namespace App\Controller;
 use App\Form\LoginType;
 use App\Form\InscriptionType;
 use App\Entity\User;
-
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManagerInterface;
-
 use Symfony\Component\HttpFoundation\RedirectResponse;
-
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
-
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 use Symfony\Component\Security\Core\Security;
-
 use Twig\Environment;
 use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
@@ -72,7 +66,6 @@ class SecurityController
         Security $security,
         EntityManagerInterface $entityManager,
         FlashBagInterface $flash,
-
         UserPasswordEncoderInterface $encoder
     ) {
         $this->formFactory = $formFactory;
@@ -82,8 +75,6 @@ class SecurityController
         $this->encoder = $encoder;
         $this->entityManager = $entityManager;
         $this->flash = $flash;
-
-
     }
 
     /**
